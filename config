@@ -1,0 +1,61 @@
+[global_config]
+  dbus = False
+  focus = system
+  handle_size = 3
+  borderless = True
+  tab_position = hidden
+  broadcast_default = off
+  scroll_tabbar = True
+  homogeneous_tabbar = False
+  disable_real_transparency = True
+  inactive_color_offset = 0.7228915662650602
+  inactive_bg_color_offset = 0.8065693430656934
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  suppress_multiple_term_dialog = True
+[keybindings]
+  close_term = <Primary>q
+  page_up = <Alt>k
+  page_down = <Alt>j
+  page_up_half = <Primary>k
+  page_down_half = <Primary>j
+[profiles]
+  [[default]]
+    background_color = "#282a36"
+    background_darkness = 0.87
+    background_type = transparent
+    background_image = None
+    cursor_fg_color = "#e01b24"
+    cursor_bg_color = "#00ff41"
+    cursor_color_default = False
+    font = System-ui Bold 10
+    foreground_color = "#fffdd0"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    exit_action = hold
+    palette = "#262626:#e356a7:#42e66c:#e4f34a:#88c0d0:#e64747:#75d7ec:#efa554:#7a7a7a:#ff79c6:#50fa7b:#f1fa8c:#bd93f9:#ff5555:#8be9fd:#ffb86c"
+    copy_on_selection = True
+  [[Blue Matrix]]
+    background_color = "#101116"
+    background_image = None
+    cursor_shape = ibeam
+    cursor_bg_color = "#76ff9f"
+    font = FreeSans 10
+    foreground_color = "#00a2ff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    exit_action = hold
+    palette = "#101116:#ff5680:#00ff9c:#fffc58:#00b0ff:#d57bff:#76c1ff:#c7c7c7:#686868:#ff6e67:#5ffa68:#fffc67:#6871ff:#d682ec:#60fdff:#ffffff"
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+      profile = default
+      command = ""
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
